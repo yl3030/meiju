@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+body {
+    font-family: 'Helvetica Neue',"蘭亭黑","Noto Sans TC","微軟正黑體",serif;
+    color: #4D4D4D;
+}
+
+a {
+    color: #4D4D4D;
+    text-decoration: none;
+    &:hover {
+        color: #4D4D4D;
+        text-decoration: none;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-mt {
+    margin-top: 100px;
+}
+
+.main-mb {
+    margin-bottom: 100px;
+}
+
+@import "_common.scss";
+
+@import "./page/index";
