@@ -1,241 +1,334 @@
 #news-tabContent {
-    .news-box {
-        .date {
-            color: #666;
-            font-weight: 300;
-            margin-bottom: 8px;
-        }
-        .content {
-            color: #666;
-        }
-        .pic {
-            width: 100%;
-            padding-bottom: 30%;
-            position: relative;
-            img {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                object-fit: cover;
-            }
-        }
-        .more {
-            margin-top: 15px;
-            font-size: 16px;
-            color: #666;
-        }
-        .dash {
-            margin-top: 20px;
-        }
+  .news-box {
+    .date {
+      color: #666;
+      font-weight: 300;
+      margin-bottom: 8px;
     }
+    .content {
+      color: #666;
+    }
+    .pic {
+      width: 100%;
+      padding-bottom: 30%;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+      }
+    }
+    .more {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #666;
+    }
+    .dash {
+      margin-top: 20px;
+    }
+  }
 }
 
 .search-box {
-    width: 100%;
-    height: 40px;
-    border: 1px solid #666;
-    input {
-        border: 0;
-        width: calc(100% - 30px);
-        padding: 10px;
-        &::placeholder {
-            color: #666;
-            font-weight: 300;
-        }
+  width: 100%;
+  height: 40px;
+  border: 1px solid #666;
+  input {
+    border: 0;
+    width: calc(100% - 30px);
+    padding: 10px;
+    &::placeholder {
+      color: #666;
+      font-weight: 300;
     }
-    button {
-        border: 0;
-        background-color: transparent;
-        width: 30px;
-        img {
-            width: 20px;
-        }
+  }
+  button {
+    border: 0;
+    background-color: transparent;
+    width: 30px;
+    img {
+      width: 20px;
     }
+  }
 }
 
 .article-link {
-    h5 {
-        font-size: 16px;
-        font-weight: 300;
-        border-bottom: 1px solid #666;
-    }
-    ul {
-        li {
-            a {
-                display: block;
-                padding: 8px 0 0;
-                p {
-                    margin: 0;
-                    color: #666;
-                    font-weight: 300;
-                }
-                .dash {
-                    width: 100%;
-                    height: 1px;
-                    background-image: linear-gradient(to right,#666 0%,#666 50%,transparent 50%);
-                    background-size: 3px 3px;
-                    background-repeat: repeat-x;
-                    margin-top: 8px;
-                }
-            }
+  h5 {
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: 1px solid #666;
+  }
+  ul {
+    li {
+      a {
+        display: block;
+        padding: 8px 0 0;
+        p {
+          margin: 0;
+          color: #666;
+          font-weight: 300;
         }
+        .dash {
+          width: 100%;
+          height: 1px;
+          background-image: linear-gradient(
+            to right,
+            #666 0%,
+            #666 50%,
+            transparent 50%
+          );
+          background-size: 3px 3px;
+          background-repeat: repeat-x;
+          margin-top: 8px;
+        }
+      }
     }
+  }
 }
 
 .magazine-title {
+  .magazine-title-box {
+    width: 20%;
     .title {
-        padding: 25px;
-        border: 5px solid #666;
-        width: fit-content;
-        color: #666;
-        h4 {
-            font-weight: 900;
-            font-size: 24px;
-        }
-        h5 {
-            font-weight: 400;
-            font-size: 24px;
-            margin-bottom: 0;
-        }
+      padding: 25px;
+      border: 5px solid #666;
+      width: fit-content;
+      color: #666;
+      h4 {
+        font-weight: 900;
+        font-size: 24px;
+      }
+      h5 {
+        font-weight: 400;
+        font-size: 24px;
+        margin-bottom: 0;
+      }
     }
+  }
+  .article-title-box {
+    width: 80%;
     .article-title {
-        h1 {
-            font-size: 30px;
-            margin-bottom: 25px;
-        }
-        p {
-            color: #666;
-            font-weight: 300;
-        }
+      h1 {
+        font-size: 30px;
+        margin-bottom: 25px;
+      }
+      p {
+        color: #666;
+        font-weight: 300;
+      }
     }
+  }
 }
 
 .article-content {
-    // 最大標題
-    .article-main-title {
-        h2 {
-            color: #666;
-            font-weight: 700;
-            font-size: 28px;
-            margin-bottom: 50px;
-            position: relative;
-            &::after {
-                content: "";
-                position: absolute;
-                width: 100px;
-                height: 3px;
-                background-color: #D50012;
-                top: calc(100% + 10px);
-                left: 0;
-            }
-        }
+  // 最大標題
+  .article-main-title {
+    h2 {
+      color: #666;
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 50px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 3px;
+        background-color: #d50012;
+        top: calc(100% + 10px);
+        left: 0;
+      }
     }
+  }
 
-    // 一張圖
-    .article-pic-1col {
-        margin-bottom: 50px;
-        img {
-            width: 100%;
-        }
+  // 一張圖
+  .article-pic-1col {
+    margin-bottom: 50px;
+    img {
+      width: 100%;
     }
+  }
 
-    // 兩張圖
-    .article-pic-2col {
-        margin-bottom: 50px;
-        display: flex;
-        justify-content: space-between;
+  // 兩張圖
+  .article-pic-2col {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .pic {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  // 內文
+  .inner-text {
+    margin-bottom: 50px;
+    h3 {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+    p {
+      font-weight: 300;
+      color: #666;
+      margin: 0;
+      line-height: 1.8;
+    }
+    ul {
+      list-style: disc;
+      color: #666;
+      font-weight: 300;
+      padding-left: 20px;
+      li {
+        line-height: 1.8;
+      }
+    }
+    &.text-title-black {
+      h3 {
+        color: #000;
+      }
+    }
+    &.text-title-green {
+      h3 {
+        color: #008245;
+      }
+    }
+    &.text-title-brown {
+      h3 {
+        color: #753c24;
+      }
+    }
+  }
+
+  // 圖+文
+  .article-card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .pic {
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      p {
+        color: #666;
+        margin: 0;
+        line-height: 1.8;
+        font-weight: 300;
+      }
+      a {
+        text-decoration: underline;
+        color: #0000ff;
+      }
+    }
+    &.pic1-text2 {
+      .pic {
+        width: 33.3333%;
+      }
+      .text {
+        width: 66.6666%;
+      }
+    }
+    &.pic1-text1 {
+      .pic {
+        width: 50%;
+      }
+      .text {
+        width: 50%;
+      }
+      &.order-reverse {
         .pic {
-            width: 50%;
-            img {
-                width: 100%;
-            }
-        }
-    }
-
-    // 內文
-    .inner-text {
-        margin-bottom: 50px;
-        h3 {
-            font-size: 24px;
-            margin-bottom: 25px;
-        }
-        p {
-            font-weight: 300;
-            color: #666;
-            margin: 0;
-            line-height: 1.8;
-        }
-        ul {
-            list-style: disc;
-            color: #666;
-            font-weight: 300;
-            padding-left: 20px;
-            li {
-                line-height: 1.8;
-            }
-        }
-        &.text-title-black {
-            h3 {
-                color: #000;
-            }
-        }
-        &.text-title-green {
-            h3 {
-                color: #008245;
-            }
-        }
-        &.text-title-brown {
-            h3 {
-                color: #753C24;
-            }
-        }
-    }
-
-    // 圖+文
-    .article-card {
-        display: flex;
-        justify-content: space-between;
-        .pic {
-            img {
-                width: 100%;
-            }
+          order: 2;
         }
         .text {
-            p {
-                color: #666;
-                margin: 0;
-                line-height: 1.8;
-                font-weight: 300;
-            }
-            a {
-                text-decoration: underline;
-                color: #0000FF;
-            }
+          order: 1;
+          padding: 0 !important;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .magazine-title {
+    .magazine-title-box {
+      width: 25%;
+    }
+    .article-title-box {
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .magazine-title {
+    .magazine-title-box {
+      width: 35%;
+    }
+    .article-title-box {
+      width: 65%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .magazine-title {
+    .magazine-title-box {
+      width: 100%;
+      .title {
+        width: 100%;
+        margin-bottom: 30px;
+        h4,
+        h5 {
+          display: inline-block;
+          font-size: 30px;
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+    .article-title-box {
+      width: 100%;
+    }
+  }
+
+  .article-content {
+    // 兩張圖
+    .article-pic-2col {
+      .pic {
+        width: 100%;
+      }
+    }
+    // 圖+文
+    .article-card {
         &.pic1-text2 {
             .pic {
-                width: 33.3333%;
+              width: 100%
             }
             .text {
-                width: 66.6666%;
+              width: 100%
             }
-        }
-        &.pic1-text1 {
+          }
+          &.pic1-text1 {
             .pic {
-                width: 50%;
+              width: 100%;
             }
             .text {
-                width: 50%;
+              width: 100%;
             }
-            &.order-reverse {
-                .pic {
-                    order: 2;
-                }
-                .text {
-                    order: 1;
-                    padding: 0 !important;
-                }
-            }
-        }
+            // &.order-reverse {
+            //   .pic {
+            //     order: 1;
+            //   }
+            //   .text {
+            //     order: 2;
+            //     padding: 0 !important;
+            //   }
+            // }
+          }
     }
+  }
 }

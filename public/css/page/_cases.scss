@@ -133,8 +133,13 @@
         border-radius: 0;
         background-color: #868686;
       }
+      .inform-box {
+        width: 100%;
+        height: 100%;
+    }
       .pic-inform {
         margin-bottom: 7%;
+        
         .pic {
           width: 100%;
           padding-bottom: 70%;
@@ -192,10 +197,20 @@
             padding-bottom: 0;
             .inner {
                 position: static;
-                padding: 20px 0 0;
+                padding: 20px 0;
                 overflow-x: auto;
                 display: flex;
                 width: 100%;
+                &::-webkit-scrollbar {
+                    height: 5px;
+                  }
+                  &::-webkit-scrollbar-thumb {
+                      height: 100%;
+                      width: auto;
+                  }
+                .inform-box {
+                        width: 100%;
+                }
                 .pic-inform {
                     margin-bottom: 0;
                     width: 33.3333%;

@@ -55,3 +55,41 @@
       }
   }
 }
+
+@media screen and (max-width:991px) {
+  .about-content {
+    .pic {
+      padding-bottom: 100%;
+    }
+    .text-box {
+      padding-bottom: 100%;
+      .text-inner {
+        .text {
+          h3 {
+            &.big {
+              font-size: 24px;
+            }
+            &.small {
+              font-size: 18px;
+            }
+          }
+        } 
+      } 
+    }
+  } 
+}
+
+@media screen and (max-width:767px) {
+  .about-content {
+    .pic {
+      padding-bottom: 40%;
+    }
+    .text-box {
+      padding-bottom: 0;
+      .text-inner {
+        position: static;
+        border: 0;
+      }
+    }
+  } 
+}
