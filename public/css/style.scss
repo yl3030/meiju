@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+$main-color:#C91C24;
+
 body {
     font-family: 'Helvetica Neue',"蘭亭黑","Noto Sans TC","微軟正黑體",serif;
     color: #4D4D4D;
@@ -19,6 +21,10 @@ ul {
     margin: 0;
 }
 
+input,select,textarea {
+    outline: none;
+}
+
 .main-mt {
     margin-top: 100px;
 }
@@ -27,6 +33,51 @@ ul {
     margin-bottom: 100px;
 }
 
+.main-my {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.pb_50p {
+    width: 100%;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.bg {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:767px) {
+    .main-mt {
+        margin-top: 50px;
+    }
+    .main-mb {
+        margin-bottom: 50px;
+    }
+    .main-my {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .row {
+        margin-right: -5px;
+        margin-left: -5px;
+    }
+    .row>* {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+
 @import "_common.scss";
 
 @import "./page/index";
+@import "./page/about";
+@import "./page/promise";
+@import "./page/cases";
+@import "./page/news";
+@import "./page/contact"

@@ -1,0 +1,26 @@
+.promise-content {
+    .inner {
+        margin: 0 -0.25rem;
+    }
+    .icon-box {
+        background-color: #C3C3C3;
+        width: 100%;
+        padding-bottom: 100%;
+        position: relative;
+        .icon-inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            img {
+                width: 30%;
+            }
+            p {
+                width: 100%;
+                font-size: 15px;
+            }
+        }
+        
+    }
+}

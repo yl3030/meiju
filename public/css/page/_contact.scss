@@ -1,0 +1,57 @@
+.map {
+  iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.contact-form {
+  .form-box {
+    margin-bottom: 20px;
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #9e9f9f;
+      border-radius: 0;
+      &::placeholder {
+        color: #727171;
+        font-weight: 300;
+      }
+    }
+    input {
+      height: 40px;
+    }
+    select {
+      height: 40px;
+      color: #727171;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-image: url(/public/img/form_arrow.png);
+      background-size: 25px auto;
+      background-repeat: no-repeat;
+      background-position: calc(100% - 15px) center;
+    }
+  }
+  button {
+      background-color: $main-color;
+      color: #fff;
+  }
+  .privacy-box {
+      color: #666;
+      font-weight: 300;
+      letter-spacing: 1.2px;
+      .privacy {
+          text-decoration: underline;
+          cursor: pointer;
+      }
+      .privacy_content {
+          display: none;
+      }
+  }
+}
