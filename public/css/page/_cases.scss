@@ -1,3 +1,18 @@
+.cases-benner {
+  position: relative;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &.origin {
+      display: block;
+    }
+    &.mobile {
+      display: none;
+    }
+  }
+}
 .hotcases-content {
   .pic {
     width: 100%;
@@ -45,8 +60,6 @@
   }
 }
 
-
-
 #cases-tabContent {
   #base {
     .pic {
@@ -73,7 +86,7 @@
         color: #666;
         font-weight: 300;
         p {
-            margin: 0;
+          margin: 0;
         }
       }
       ul {
@@ -136,10 +149,10 @@
       .inform-box {
         width: 100%;
         height: 100%;
-    }
+      }
       .pic-inform {
         margin-bottom: 7%;
-        
+
         .pic {
           width: 100%;
           padding-bottom: 70%;
@@ -160,80 +173,87 @@
   }
 }
 
-@media screen and (max-width:767px) {
-    .cases-benner {
-        padding-bottom: calc(100vh - 70px);
-        background-image: url(/public/img/project1_banner_mobile.png) !important;
+@media screen and (max-width: 767px) {
+  .cases-benner {
+    padding-bottom: calc(100vh - 70px);
+    img {
+      &.origin {
+        display: none;
+      }
+      &.mobile {
+        display: block;
+      }
     }
-    .hotcases-content {
-        .pic {
-            margin-bottom: 10px;
+  }
+  .hotcases-content {
+    .pic {
+      margin-bottom: 10px;
+    }
+  }
+  #cases-tabContent {
+    #base {
+      .text {
+        .title {
+          width: 30%;
         }
-    } 
-    #cases-tabContent {
-        #base {
-            .text {
-                .title {
-                    width: 30%;
-                }
-                .content {
-                    width: 70%;
-                    font-size: 14px;
-                }
-            }
-        } 
-        .bigpic {
-            display: flex;
-            flex-wrap: wrap;
-            .pic {
-                order: 2;
-            }
-            .text {
-                width: 100%;
-                order: 1;
-            }
+        .content {
+          width: 70%;
+          font-size: 14px;
         }
-        .smallpic {
-            padding-bottom: 0;
-            .inner {
-                position: static;
-                padding: 20px 0;
-                overflow-x: auto;
-                display: flex;
-                width: 100%;
-                &::-webkit-scrollbar {
-                    height: 5px;
-                  }
-                  &::-webkit-scrollbar-thumb {
-                      height: 100%;
-                      width: auto;
-                  }
-                .inform-box {
-                        width: 100%;
-                }
-                .pic-inform {
-                    margin-bottom: 0;
-                    width: 33.3333%;
-                    display: inline-block;
-                    margin-right: 10px;
-                }
-            }
+      }
+    }
+    .bigpic {
+      display: flex;
+      flex-wrap: wrap;
+      .pic {
+        order: 2;
+      }
+      .text {
+        width: 100%;
+        order: 1;
+      }
+    }
+    .smallpic {
+      padding-bottom: 0;
+      .inner {
+        position: static;
+        padding: 20px 0;
+        overflow-x: auto;
+        display: flex;
+        width: 100%;
+        &::-webkit-scrollbar {
+          height: 5px;
         }
-    } 
+        &::-webkit-scrollbar-thumb {
+          height: 100%;
+          width: auto;
+        }
+        .inform-box {
+          width: 100%;
+        }
+        .pic-inform {
+          margin-bottom: 0;
+          width: 33.3333%;
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width:575px) {
-    #cases-tabContent {
-        #base {
-            .text {
-                .title {
-                    width: 100%;
-                }
-                .content {
-                    width: 100%;
-                    font-size: 14px;
-                }
-            }
-        } 
-    } 
+@media screen and (max-width: 575px) {
+  #cases-tabContent {
+    #base {
+      .text {
+        .title {
+          width: 100%;
+        }
+        .content {
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }

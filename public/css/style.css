@@ -705,6 +705,26 @@ footer .icon img {
   font-size: 15px;
 }
 
+.cases-benner {
+  position: relative;
+}
+
+.cases-benner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cases-benner img.origin {
+  display: block;
+}
+
+.cases-benner img.mobile {
+  display: none;
+}
+
 .hotcases-content .pic {
   width: 100%;
   padding-bottom: 80%;
@@ -885,7 +905,12 @@ footer .icon img {
 @media screen and (max-width: 767px) {
   .cases-benner {
     padding-bottom: calc(100vh - 70px);
-    background-image: url(/public/img/project1_banner_mobile.png) !important;
+  }
+  .cases-benner img.origin {
+    display: none;
+  }
+  .cases-benner img.mobile {
+    display: block;
   }
   .hotcases-content .pic {
     margin-bottom: 10px;
