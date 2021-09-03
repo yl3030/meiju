@@ -84,3 +84,10 @@ $(".menu").click(function () {
   $(this).toggleClass("active");
   $(".main-nav").toggleClass("active");
 });
+
+$(".main-nav").children("ul").children("li").click(function(){
+  if($(window).width()<768){
+    $(this).toggleClass("active");
+    $(this).children(".dropdown").slideToggle(300);
+  }
+})

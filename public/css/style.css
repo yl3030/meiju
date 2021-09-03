@@ -85,13 +85,18 @@ header .logo {
   height: 40px;
 }
 
-header nav ul li {
+header nav > ul > li {
   display: inline-block;
   position: relative;
   font-weight: bold;
+  cursor: pointer;
 }
 
-header nav ul li::after {
+header nav > ul > li .fa-chevron-right {
+  display: none;
+}
+
+header nav > ul > li::after {
   position: absolute;
   content: "";
   width: 1px;
@@ -103,7 +108,7 @@ header nav ul li::after {
           transform: translateY(-50%);
 }
 
-header nav ul li:first-child::before {
+header nav > ul > li:first-child::before {
   position: absolute;
   content: "";
   width: 1px;
@@ -113,6 +118,24 @@ header nav ul li:first-child::before {
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+header nav > ul > li .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 20px;
+  min-width: 150px;
+  background-color: #c8c8c8;
+  display: none;
+}
+
+header nav > ul > li .dropdown li {
+  padding: 5px 0;
+}
+
+header nav > ul > li:hover .dropdown {
+  display: block;
 }
 
 header .menu {
@@ -365,18 +388,36 @@ footer .icon img {
   header .main-nav.active {
     left: 50vw;
   }
-  header .main-nav ul {
+  header .main-nav > ul {
     margin: 30px 0;
   }
-  header .main-nav ul li {
+  header .main-nav > ul > li {
     display: block;
     text-align: center;
     margin: 15px 0;
   }
-  header .main-nav ul li::before {
+  header .main-nav > ul > li::before {
     display: none;
   }
-  header .main-nav ul li::after {
+  header .main-nav > ul > li::after {
+    display: none;
+  }
+  header .main-nav > ul > li .fa-chevron-right {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 5px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  header .main-nav > ul > li.active .fa-chevron-right {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  header .main-nav > ul > li .dropdown {
+    position: relative;
+    background-color: transparent;
+  }
+  header .main-nav > ul > li:hover .dropdown {
     display: none;
   }
   header .logo-box {
